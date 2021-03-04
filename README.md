@@ -1,2 +1,2 @@
-This is a tryout repi for publishing a site with Jekyll.
+This is a tryout repository for publishing a site with Jekyll.
 # faithful-foul
