@@ -1,3 +1,2 @@
-This is a repository for publishing my personal homepage on tobiastrofast.se .
-
+This is a tryout repository for publishing a site with Jekyll.
 # faithful-foul
