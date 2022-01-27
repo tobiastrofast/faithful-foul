@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 html {
     margin: 20px;
 }
@@ -18,17 +19,16 @@ div {
 }
 
 header p {
-    font-size: 1.2em;
-    font-weight: 200;
-    line-height: 140%;
-}
-
-header p em {
-    font-size: 1em;
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    font-size: 1.3em;
+    line-height: 160%;
 }
 
 p.info {
-    line-height: 130%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.05em;
+    line-height: 140%;
     margin-top: 0px;
 }
 
@@ -58,8 +58,10 @@ button {
 }
 
 p.note {
+    font-style: normal;
+    font-family: 'PT Sans', sans-serif;
     margin-top: 5px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-bottom: 10px;
     color: hsl(0 0% 40%);
 }
