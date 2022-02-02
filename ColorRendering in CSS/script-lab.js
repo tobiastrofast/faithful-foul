@@ -16,26 +16,29 @@ function createAB() {
     }
 
 };
-createAB();
+createAB(); //run the function on load.
 
+//add background color and display the values as text in the divs.
 function setLAB() {
     for (let j = 0; j < labdiv.length; j++) {
         labdiv[j].setAttribute("style", `background-color:lab(${labL}% ${a[j]} ${b[j]})`);
         labdiv[j].innerHTML = `<p>L:${labL}</p><p>a:${a[j]}</p><p>b:${b[j]}</p>`;
     }
 };
-setLAB();
+setLAB(); //run the function on load.
 
+//function that updates the L value based on the slider value.
 function updateLab() {
     labL = labField.value;
     setLAB();
 
 }
 
+//function that empties the H and S array, creates new values and adds them to the divs.
 function updateAB() {
     a = [];
     b = [];
-    createAB();
+    createAB(); //create new values
     for (let j = 0; j < labdiv.length; j++) {
         labdiv[j].setAttribute("style", `background-color:lab(${labL}% ${a[j]} ${b[j]})`);
         labdiv[j].innerHTML = `<p>L:${labL}</p><p>a:${a[j]}</p><p>b:${b[j]}</p>`;

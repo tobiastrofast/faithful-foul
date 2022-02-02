@@ -16,26 +16,29 @@ function createHS() {
 
     }
 };
-createHS();
+createHS(); //run the function on load.
 
+//add background color and display the values as text in the divs.
 function setHSL() {
     for (let j = 0; j < hsldiv.length; j++) {
         hsldiv[j].setAttribute("style", `background-color:hsl(${H[j]} ${S[j]}% ${hslL}%)`);
         hsldiv[j].innerHTML = `<p>H:${H[j]}&deg;</p><p>S:${S[j]}%</p><p>L:${hslL}%</p>`;
     }
 };
-setHSL();
+setHSL(); //run the function on load.
 
+//function that updates the L value based on the slider value.
 function updatehsL() {
     hslL = hslField.value;
     setHSL();
 
 }
 
+//function that empties the H and S array, creates new values and adds them to the divs.
 function updateHS() {
     H = [];
     S = [];
-    createHS();
+    createHS(); //create new values
     for (let j = 0; j < hsldiv.length; j++) {
         hsldiv[j].setAttribute("style", `background-color:hsl(${H[j]} ${S[j]}% ${hslL}%)`);
         hsldiv[j].innerHTML = `<p>H:${H[j]}&deg;</p><p>S:${S[j]}%</p><p>L:${hslL}%</p>`;

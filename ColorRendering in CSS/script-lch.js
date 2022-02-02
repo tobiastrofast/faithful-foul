@@ -15,26 +15,29 @@ function createLh() {
 
     }
 };
-createLh();
+createLh(); //run the function on load.
 
+//add background color and display the values as text in the divs.
 function setLCH() {
     for (let j = 0; j < lchdiv.length; j++) {
         lchdiv[j].setAttribute("style", `background-color:lch(${lchL[j]}% ${C} ${h[j]})`);
         lchdiv[j].innerHTML = `<p>L:${lchL[j]}</p><p>C:${C}</p><p>h:${h[j]}&deg;</p>`;
     }
 };
-setLCH();
+setLCH(); //run the function on load.
 
+//function that updates the L value based on the slider value.
 function updateC() {
     C = cField.value;
     setLCH();
 
 }
 
+//function that empties the H and S array, creates new values and adds them to the divs.
 function updateLh() {
     lchL = [];
     h = [];
-    createLh();
+    createLh(); //create new values
     for (let j = 0; j < lchdiv.length; j++) {
         lchdiv[j].setAttribute("style", `background-color:lch(${lchL[j]}% ${C} ${h[j]})`);
         lchdiv[j].innerHTML = `<p>L:${lchL[j]}</p><p>C:${C}</p><p>h:${h[j]}&deg;</p>`;
