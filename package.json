@@ -1,0 +1,15 @@
+{
+  "name": "faithful-foul",
+  "version": "1.0.0",
+  "description": "This is a repository for publishing my personal homepage on tobiastrofast.se .",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "github:11ty/eleventy"
+  }
+}
