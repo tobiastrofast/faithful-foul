@@ -1,0 +1,22 @@
+#container {
+    width: 90vw;
+    height: 90vh;
+    background-color: aquamarine;
+}
+.t1--class{
+    width: 500px;
+}
+
+#t1--content {
+    max-width: 500px;
+    width: 500px;
+}
+
+#t1--container img {
+    display: block;
+    max-width: 100%;
+}
+.psv-tooltip {
+    background-color: rgba(162, 161, 161, 0.8);
+    max-width: 500px;
+}

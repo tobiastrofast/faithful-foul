@@ -1,6 +1,12 @@
 const viewer = new PhotoSphereViewer.Viewer({
     container: document.querySelector('#container'),
     panorama: 'Idris_Equirecatangular.jpg',
+    navbar: [
+        'zoom',
+        'move',
+        'caption',
+        'fullscreen'
+        ],
     plugins: [
         [PhotoSphereViewer.MarkersPlugin, {
             defaultHoverScale: {amount: 1.1},
