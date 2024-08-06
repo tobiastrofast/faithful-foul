@@ -11,7 +11,8 @@ const viewer = new PhotoSphereViewer.Viewer({
         'zoom',
         'move',
         'caption',
-        'fullscreen'
+        'fullscreen',
+        'markersList'
         ],
     plugins: [
         [PhotoSphereViewer.MarkersPlugin],
@@ -27,9 +28,11 @@ const virtualTour = viewer.getPlugin(PhotoSphereViewer.VirtualTourPlugin);
 
 const navMarker = {
     id: 'marker-1',
-    image: baseUrl + 'nav-arrow45deg.png',
-    size: {width: 32, height: 32},
-    position: { textureX: 1500, textureY: 780 }
+    imageLayer: baseUrl + 'drop-pin.png',
+    size: {width: 50, height: 50},
+    anchor: 'bottom center',
+    position: { textureX: 6000, textureY: 3200 },
+    tooltip: 'Podium',
     };
 
 virtualTour.setNodes([
@@ -37,9 +40,9 @@ virtualTour.setNodes([
         id: '1',
         panorama: baseUrl + 'A1-01.jpg',
         name: 'Entre',
+        markers: [navMarker],
         links: [{ nodeId: '2', position: { textureX: 6000, textureY: 3600}}],
-        // markers: [navMarker]
-
+        
     },
     {
         id: '2',
@@ -47,9 +50,10 @@ virtualTour.setNodes([
         name: 'Podium',
         links: [{ nodeId: '1', position: { textureX: 9000, textureY: 3600}}],
         position: { yaw: '0deg', pitch: '10deg'},
-        // markers: [navMarker]
+        // markers: [navMarker],
+     
     }
-    ], ['2'])
+    ], ['1'])
 
 
 
