@@ -1,9 +1,3 @@
-const text = {
-  projektor: "Denna sal är utrustad med två projektorer som kan användas för att visa antingen samma eller två olika bilder.",
-  display: "Denna sal är utrustad med två displayer som kan användas för att visa antingen samma eller två olika bilder",
-  cam_auditorium: "Vid distansundervisning filmar denna kamera auditoriet, alltså deltagarna i rummet.",
-  cam_podium: "Vid distansundervisning filmar denna kamera podiet, alltså föreläsaren el. presentatören i rummet."
-}
 var APP_DATA = {
   "scenes": [
     {
@@ -57,31 +51,31 @@ var APP_DATA = {
           "yaw": -0.01133737840386928,
           "pitch": 0.1550589928453192,
           "title": "Podium",
-          "text": ""
+          "texter": ""
         },
         {
           "yaw": 1.2198633007851232,
           "pitch": -0.22173264315717134,
           "title": "Podium-kamera",
-          "text": text.cam_podium
+          "text": texter.cam_podium
         },
         {
           "yaw": 0.6945770412612688,
           "pitch": -0.2545749737595653,
           "title": "Projektor 1",
-          "text": text.projektor
+          "text": texter.projektor
         },
         {
           "yaw": 1.126599001680706,
           "pitch": -0.3542446725509052,
           "title": "Projektor 2",
-          "text": text.projektor
+          "text": texter.projektor
         },
         {
           "yaw": -0.4151656979656053,
           "pitch": -0.3015645443928463,
           "title": "Auditorie-kamera",
-          "text": text.cam_auditorium
+          "text": texter.cam_auditorium
         }
       ]
     },
