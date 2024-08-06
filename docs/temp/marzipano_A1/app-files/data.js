@@ -176,7 +176,7 @@ var APP_DATA = {
       "infoHotspots": []
     }
   ],
-  "name": "Project Title",
+  "name": "Linköpings Universitet - Campus Valla - A1",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": false,
