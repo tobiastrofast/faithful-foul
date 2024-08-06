@@ -42,7 +42,7 @@ var APP_DATA = {
         {
           "yaw": 1.2076772358035424,
           "pitch": -0.11953149178850708,
-          "rotation": 3.9269908169872414,
+          "rotation": 0,
           "target": "2-auditorium"
         }
       ],
@@ -52,6 +52,12 @@ var APP_DATA = {
           "pitch": 0.1550589928453192,
           "title": "Podium",
           "text": "I denna sal finns..."
+        },
+        {
+          "yaw": 1.2198633007851232,
+          "pitch": -0.22173264315717134,
+          "title": "Podium-kamera",
+          "text": "Denna kamera filmar podiet, alltså föreläsaren el. presentatören i rummet."
         },
         {
           "yaw": 0.6945770412612688,
@@ -70,12 +76,6 @@ var APP_DATA = {
           "pitch": -0.3015645443928463,
           "title": "Auditorie-kamera",
           "text": "Denna kamera filmar auditoriet, alltså deltagarna i rummet."
-        },
-        {
-          "yaw": 1.2198633007851232,
-          "pitch": -0.22173264315717134,
-          "title": "Podium-kamera",
-          "text": "Denna kamera filmar podiet, alltså föreläsaren el. presentatören i rummet."
         }
       ]
     },
@@ -115,13 +115,13 @@ var APP_DATA = {
         {
           "yaw": -0.0473820000561318,
           "pitch": -0.028775108254826876,
-          "rotation": 3.141592653589793,
+          "rotation": 0,
           "target": "2-auditorium"
         },
         {
           "yaw": 1.3930866461090616,
           "pitch": 0.3038110799557998,
-          "rotation": 4.71238898038469,
+          "rotation": 0,
           "target": "0-entrdrr"
         }
       ],
@@ -163,13 +163,13 @@ var APP_DATA = {
         {
           "yaw": -0.038489397431728634,
           "pitch": 0.26555833597255685,
-          "rotation": 3.141592653589793,
+          "rotation": 0,
           "target": "1-podium"
         },
         {
           "yaw": -0.6359853742002528,
           "pitch": 0.26907658721001937,
-          "rotation": 1.5707963267948966,
+          "rotation": 0,
           "target": "0-entrdrr"
         }
       ],

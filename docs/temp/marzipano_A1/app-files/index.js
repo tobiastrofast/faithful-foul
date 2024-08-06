@@ -253,7 +253,9 @@
 
     // Create image element.
     var icon = document.createElement('img');
-    icon.src = 'img/link.png';
+    // icon.src = 'img/link.png';
+    // icon.src = 'img/link_360.png';
+    icon.src = 'img/link_viewpoint.png';
     icon.classList.add('link-hotspot-icon');
 
     // Set rotation transform.
