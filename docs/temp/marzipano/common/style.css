@@ -837,3 +837,12 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
+
+
+/* Added styles Tobias Trofast 2020-04-07 */
+.liu_logo {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 150px;  
+}
