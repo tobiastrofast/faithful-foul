@@ -463,10 +463,10 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   border-radius: 20px;
   background-color: var(--dark-info-bg);
   cursor: pointer;
-  -webkit-transition: width 0.3s ease-in-out 0.5s,
-                      border-radius 0.3s ease-in-out 0.5s;
-  transition: width 0.3s ease-in-out 0.5s,
-              border-radius 0.3s ease-in-out 0.5s;
+  -webkit-transition: width 0.3s ease-in-out 0.2s,
+                      border-radius 0.3s ease-in-out 0.2s;
+  transition: width 0.3s ease-in-out 0.2s,
+              border-radius 0.3s ease-in-out 0.2s;
 }
 
 .mobile .info-hotspot .info-hotspot-header {

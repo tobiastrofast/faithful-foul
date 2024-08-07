@@ -94,7 +94,39 @@ var APP_DATA = {
           "target": "0-entredrr"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -0.1,
+          "pitch": -0.25,
+          "title": "Auditorie-kamera",
+          "text": texter.cam_auditorium
+        },
+        {
+          "yaw": -0.8,
+          "pitch": 0.44,
+          "title": "Kastmikrofon",
+          "text": texter.mic_kast
+        },
+        {
+          "yaw": -0.9,
+          "pitch": 0.44,
+          "title": "Mikrofoner",
+          "text": texter.mic_fast
+        },
+        {
+          "yaw": 0.1,
+          "pitch": 0.58,
+          "title": "Kontrollpanel",
+          "text": texter.kontrollpanel
+        },
+        {
+          "yaw": -0.6,
+          "pitch": 0.42,
+          "title": "Dokumentkamera",
+          "text": texter.dokumentkamera
+        }
+
+      ]
     },
     {
       "id": "2-auditorium",
