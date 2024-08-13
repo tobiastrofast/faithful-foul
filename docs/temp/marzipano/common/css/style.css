@@ -34,7 +34,7 @@ html, body {
   /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-size: 16px;
   background-color: #000;
-  color: #fff;
+  color: var(--liu-grey-180);
 }
 
 a, a:hover, a:active, a:visited {
@@ -58,6 +58,7 @@ a, a:hover, a:active, a:visited {
   right: 40px;
   height: 40px;
   text-align: center;
+  color: var(--liu-grey-10);
 }
 
 .mobile #titleBar {
@@ -274,6 +275,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   transition: margin-left 0.5s ease-in-out;
   color: var(--liu-grey-180);
   font-family: 'KorolevLiULight', sans-serif;
+
 }
 
 .mobile #sceneList {
@@ -697,8 +699,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   right: 10px;
   width: auto;
   height: 50px;
-  background-color: var(--dark-info-bg);
-  background-color: var(--dark-info-bg-alpha);
+  background-color: var(--liu-blue-40);
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out 0.2s;
   transition: opacity 0.3s ease-in-out 0.2s;
@@ -754,8 +755,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   right: 0;
   width: 50px;
   height: 50px;
-  background-color: var(--med-info-bg);
-  background-color: var(--med-info-bg-alpha);
+  background-color: var(--liu-blue-40);
   cursor: pointer;
 }
 
@@ -772,8 +772,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   left: 10px;
   right: 10px;
   padding: 10px;
-  background-color: var(--med-info-bg);
-  background-color: var(--med-info-bg-alpha);
+  background-color: var(--liu-grey-10);
   overflow-y: auto;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -783,6 +782,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  font-family: 'KorolevLiuLight', sans-serif;
 }
 
 .info-hotspot-modal.visible .info-hotspot-text {
