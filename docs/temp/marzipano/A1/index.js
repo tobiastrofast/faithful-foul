@@ -1,4 +1,4 @@
-/*
+ /*
  * Copyright 2016 Google Inc. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -255,7 +255,7 @@
     var icon = document.createElement('img');
     // icon.src = '../common/img/link.png';
     // icon.src = '../common/img/link_360.png';
-    icon.src = '../common/img/link_viewpoint.png';
+    icon.src = '../common/img/link-liu-default.svg';
     icon.classList.add('link-hotspot-icon');
 
     // Set rotation transform.
@@ -301,7 +301,7 @@
     var iconWrapper = document.createElement('div');
     iconWrapper.classList.add('info-hotspot-icon-wrapper');
     var icon = document.createElement('img');
-    icon.src = '../common/img/info.png';
+    icon.src = '../common/img/info-liu.svg';
     icon.classList.add('info-hotspot-icon');
     iconWrapper.appendChild(icon);
 
@@ -317,7 +317,7 @@
     var closeWrapper = document.createElement('div');
     closeWrapper.classList.add('info-hotspot-close-wrapper');
     var closeIcon = document.createElement('img');
-    closeIcon.src = '../common/img/close.png';
+    closeIcon.src = '../common/img/close-liu.svg';
     closeIcon.classList.add('info-hotspot-close-icon');
     closeWrapper.appendChild(closeIcon);
 

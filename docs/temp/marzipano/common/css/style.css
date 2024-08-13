@@ -30,7 +30,8 @@ html, body {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: KorolevLiUMedium, sans-serif;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-size: 16px;
   background-color: #000;
   color: #fff;
@@ -87,8 +88,7 @@ body.multiple-scenes.mobile #titleBar {
   height: 100%;
   line-height: 30px;
   padding: 5px;
-  background-color: var(--med-info-bg);
-  background-color: var(--med-info-bg-alpha);
+  background-color: var(--liu-grey-180);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -111,8 +111,8 @@ body.multiple-scenes.mobile #titleBar {
   width: 40px;
   height: 40px;
   padding: 5px;
-  background-color: var(--dark-info-bg);
-  background-color: var(--dark-info-bg-alpha);
+  background-color: var(--liu-grey-180);
+
 }
 
 .mobile #fullscreenToggle {
@@ -161,8 +161,7 @@ body.fullscreen-enabled #fullscreenToggle {
   width: 40px;
   height: 40px;
   padding: 5px;
-  background-color: var(--dark-info-bg);
-  background-color: var(--dark-info-bg-alpha);
+  background-color: var(--liu-grey-180);
 }
 
 .mobile #autorotateToggle {
@@ -215,8 +214,8 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   width: 40px;
   height: 40px;
   padding: 5px;
-  background-color: var(--dark-info-bg);
-  background-color: var(--dark-info-bg-alpha);
+  background-color: var(--liu-grey-180);
+
 }
 
 .mobile #sceneListToggle {
@@ -273,6 +272,8 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   margin-left: 0;
   -webkit-transition: margin-left 0.5s ease-in-out;
   transition: margin-left 0.5s ease-in-out;
+  color: var(--liu-grey-180);
+  font-family: 'KorolevLiULight', sans-serif;
 }
 
 .mobile #sceneList {
@@ -281,8 +282,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 
 #sceneList .scenes {
   width: 100%;
-  background-color: var(--med-info-bg);
-  background-color: var(--med-info-bg-alpha);
+  background-color: var(--liu-grey-10);
 }
 
 .mobile #sceneList {
@@ -328,13 +328,16 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 .no-touch #sceneList .scene:hover {
-  background-color: var(--dark-info-bg);
-  background-color: var(--dark-info-bg-alpha);
+  background-color: var(--liu-grey-20);
 }
 
 #sceneList .scene.current {
-  background-color: var(--dark-info-bg);
-  background-color: var(--dark-info-bg-alpha);
+  background-color: var(--liu-grey-40);
+
+}
+#sceneList .scene.current:hover {
+  background-color: var(--liu-grey-60);
+
 }
 
 /* Hide scene list when only a single scene exists */
@@ -384,10 +387,10 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
   border-radius: 5px;
 
-  background-color: var(--med-info-bg);
-  background-color: var(--med-info-bg-alpha);
+  background-color: var(--liu-grey-10);
+  background-color: var(--liu-grey-10);
 
-  color: #fff;
+  color: var(--liu-grey-180);
 
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -445,6 +448,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   opacity: 0.9;
   -webkit-transition: opacity 0.2s 0.2s;
   transition: opacity 0.2s 0.2s;
+  color: var(--liu-grey-180)
 }
 
 .no-touch .info-hotspot:hover {
@@ -461,7 +465,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-color: var(--dark-info-bg);
+  background-color: var(--liu-blue-40);
   cursor: pointer;
   -webkit-transition: width 0.3s ease-in-out 0.2s,
                       border-radius 0.3s ease-in-out 0.2s;
@@ -508,9 +512,9 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 }
 
 .info-hotspot .info-hotspot-icon {
-  width: 90%;
-  height: 90%;
-  margin: 5%;
+  width: 70%;
+  height: 70%;
+  margin: 15%;
 }
 
 .info-hotspot .info-hotspot-title-wrapper {
@@ -561,8 +565,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   height: 40px;
   width: 40px;
   border-top-right-radius: 5px;
-  background-color: var(--dark-info-bg-alpha);
-  /* background-color: rgb(78,88,104); */
+  background-color: var(--liu-blue-40);
   visibility: hidden;
   -ms-transform: perspective(200px) rotateY(90deg);
   -webkit-transform: perspective(200px) rotateY(90deg);
@@ -609,7 +612,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   top: 40px;
   left: 0;
   padding: 10px;
-  background-color: var(--med-info-bg);
+  background-color: var(--liu-grey-10);
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   overflow-y: auto;
@@ -634,6 +637,9 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  font-family: 'KorolevLiULight', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5em;
 }
 
 .desktop .info-hotspot.visible .info-hotspot-text {
@@ -787,20 +793,28 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 /* View control buttons */
 
-.viewControlButton {
-  display: none;
+.view-control-wrapper{
+  background-color: var(--liu-grey-10);
+  border-radius: 4px;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 50%;
+}
+
+.viewControlButton {
+  /* display: none; */
+  position: relative;
+  /* bottom: 0;
+  left: 50%; */
   width: 40px;
   height: 40px;
   padding: 5px;
-  background-color: var(--dark-info-bg);
-  background-color: var(--dark-info-bg-alpha);
+  /* background-color: var(--dark-info-bg);
+  background-color: var(--dark-info-bg-alpha); */
 }
 
 body.view-control-buttons .viewControlButton {
-  display: block;
+  display: inline-block;
 }
 
 /* Hide controls when width is too small */
@@ -811,7 +825,7 @@ body.view-control-buttons .viewControlButton {
 }
 
 .viewControlButton .icon {
-  position: absolute;
+  /* position: absolute; */
   top: 5px;
   right: 5px;
   width: 30px;
@@ -819,7 +833,7 @@ body.view-control-buttons .viewControlButton {
 }
 
 /* Center is at margin-left: -20px */
-.viewControlButton-1 {
+/* .viewControlButton-1 {
   margin-left: -145px;
 }
 .viewControlButton-2 {
@@ -836,7 +850,7 @@ body.view-control-buttons .viewControlButton {
 }
 .viewControlButton-6 {
   margin-left: 105px;
-}
+} */
 
 
 /* Added styles Tobias Trofast 2020-04-07 */
@@ -846,3 +860,5 @@ body.view-control-buttons .viewControlButton {
   left: 10px;
   width: 150px;  
 }
+
+

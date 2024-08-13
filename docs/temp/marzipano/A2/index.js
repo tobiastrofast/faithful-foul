@@ -299,7 +299,7 @@
     var iconWrapper = document.createElement('div');
     iconWrapper.classList.add('info-hotspot-icon-wrapper');
     var icon = document.createElement('img');
-    icon.src = '../common/img/info.png';
+    icon.src = '../common/img/Info-LiU_Hexagon_Solid.png';
     icon.classList.add('info-hotspot-icon');
     iconWrapper.appendChild(icon);
 
