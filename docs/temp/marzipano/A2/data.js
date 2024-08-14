@@ -108,20 +108,20 @@ var APP_DATA = {
         {
           "yaw": -0.1,
           "pitch": -0.25,
-          "title": "Auditorie-kamera",
-          "text": texter.cam_auditorium
+          "title": "Podium-kamera",
+          "text": texter.kameror.kamera_podium
         },
         {
           "yaw": -0.8,
           "pitch": 0.44,
           "title": "Kastmikrofon",
-          "text": texter.mic_kast
+          "text": texter.mikrofoner.mic_kast
         },
         {
           "yaw": -0.9,
           "pitch": 0.44,
           "title": "Mikrofoner",
-          "text": texter.mic_fast
+          "text": texter.mikrofoner.mic_fast
         },
         {
           "yaw": 0.1,

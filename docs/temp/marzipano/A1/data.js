@@ -1,8 +1,8 @@
 // roomData is used to generate the page title (const pageTitle), and is also used in the Marzipano viewer to crete the room name dynimically in index.js // Tobias Trofast
 const roomData = {
-  'campus':' Campus Valla',
-  'building':'A-huset',
-  'room':'A1',
+  campus:' Campus Valla',
+  building:'A-huset',
+  room:'A1',
 }
 
 const pageTitle = 'Linköpings Universitet - ' + roomData.campus + ' - ' + roomData.room;
@@ -59,34 +59,28 @@ var APP_DATA = {
       ],
       "infoHotspots": [
         {
-          "yaw": -0.01133737840386928,
-          "pitch": 0.1550589928453192,
-          "title": "Podium",
-          "texter": ""
-        },
-        {
           "yaw": 1.2198633007851232,
           "pitch": -0.22173264315717134,
           "title": "Podium-kamera",
-          "text": texter.cam_podium
+          "text": texter.kameror.kamera_podium
         },
         {
           "yaw": 0.6945770412612688,
           "pitch": -0.2545749737595653,
           "title": "Projektor 1",
-          "text": texter.projektor
+          "text": texter.bildytor.projektor_duo
         },
         {
           "yaw": 1.126599001680706,
           "pitch": -0.3542446725509052,
           "title": "Projektor 2",
-          "text": texter.projektor
+          "text": texter.bildytor.projektor_duo
         },
         {
           "yaw": -0.4151656979656053,
           "pitch": -0.3015645443928463,
           "title": "Auditorie-kamera",
-          "text": texter.cam_auditorium
+          "text": texter.kameror.kamera_auditorium
         }
       ]
     },
@@ -141,19 +135,19 @@ var APP_DATA = {
           "yaw": -0.1,
           "pitch": -0.25,
           "title": "Auditorie-kamera",
-          "text": texter.cam_auditorium
+          "text": texter.kameror.kamera_auditorium
         },
         {
           "yaw": -0.85,
           "pitch": 0.44,
           "title": "Kastmikrofon",
-          "text": texter.mic_kast
+          "text": texter.mikrofoner.mic_kast
         },
         {
           "yaw": -1,
           "pitch": 0.44,
           "title": "Mikrofoner",
-          "text": texter.mic_fast
+          "text": texter.mikrofoner.mic_fast
         },
         {
           "yaw": 0.1,
