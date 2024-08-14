@@ -1,3 +1,14 @@
+// roomData is used to generate the page title (const pageTitle), and is also used in the Marzipano viewer to crete the room name dynimically in index.js // Tobias Trofast
+const roomData = {
+  'campus':' Campus Valla',
+  'building':'A-huset',
+  'room':'A1',
+}
+
+const pageTitle = 'Linköpings Universitet - ' + roomData.campus + ' - ' + roomData.room;
+
+// APP_DATA created by the Marzipano Tool. The data is used to create the scenes, hotspots and links. // Tobias Trofast
+
 var APP_DATA = {
   "scenes": [
     {
