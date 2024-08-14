@@ -1,12 +1,12 @@
 const titleBarControls = document.querySelector('#title-bar-controls');
 titleBarControls.innerHTML = `<a href="javascript:void(0)" id="autorotateToggle">
-  <img class="icon off" src="../common/img/play.png">
-  <img class="icon on" src="../common/img/pause.png">
+  <img class="icon off" src="../common/img/play-liu-white.svg">
+  <img class="icon on" src="../common/img/pause-liu-white.svg">
 </a>
 
 <a href="javascript:void(0)" id="fullscreenToggle">
-  <img class="icon off" src="../common/img/fullscreen.png">
-  <img class="icon on" src="../common/img/windowed.png">
+  <img class="icon off" src="../common/img/fullscreen-liu.svg">
+  <img class="icon on" src="../common/img/close-liu-white.svg">
 </a>
 
 <a href="javascript:void(0)" id="sceneListToggle">
