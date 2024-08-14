@@ -394,4 +394,5 @@
 
 })();
 
+// Set html head property title dynamically // Tobias
 document.title = pageTitle;

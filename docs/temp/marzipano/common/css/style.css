@@ -810,11 +810,14 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 #view-control-wrapper{
   background-color: var(--liu-grey-10);
-  border-radius: 4px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
   position: absolute;
   bottom: 10px;
   left: 50%;
 }
+
+
 
 .viewControlButton {
   /* display: none; */
