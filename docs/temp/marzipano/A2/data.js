@@ -128,28 +128,52 @@ var APP_DATA = {
           "text": texter.kameror.kamera_podium
         },
         {
+          "yaw": -3.28,
+          "pitch": -0.93,
+          "title": "Auditorium-kamera",
+          "text": texter.kameror.kamera_auditorium
+        },
+        {
+          "yaw": -0.93,
+          "pitch": 0.44,
+          "title": "Mikrofoner",
+          "text": texter.mikrofoner.mic_fast
+        },
+        {
           "yaw": -0.8,
           "pitch": 0.44,
           "title": "Kastmikrofon",
           "text": texter.mikrofoner.mic_kast
         },
         {
-          "yaw": -0.9,
-          "pitch": 0.44,
-          "title": "Mikrofoner",
-          "text": texter.mikrofoner.mic_fast
-        },
-        {
-          "yaw": 0.1,
-          "pitch": 0.58,
-          "title": "Kontrollpanel",
-          "text": texter.kontrollpanel
-        },
-        {
           "yaw": -0.6,
           "pitch": 0.42,
           "title": "Dokumentkamera",
           "text": texter.dokumentkamera
+        },
+        {
+          "yaw": 0.05,
+          "pitch": 0.65,
+          "title": "Kontrollpanel",
+          "text": texter.kontrollpanel
+        },
+      {
+          "yaw": 0.60,
+          "pitch": 0.35,
+          "title": "Deltagarskärm",
+          "text": texter.deltagarskarm
+        },
+        {
+          "yaw": 0.18,
+          "pitch": 0.42,
+          "title": "Touch-skärm",
+          "text": texter.touchskarm
+        },
+        {
+          "yaw": 0.86,
+          "pitch": 0.46,
+          "title": "Kablar för anslutning",
+          "text": texter.kablage
         }
 
       ],
