@@ -479,9 +479,9 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 }
 
 .info-hotspot .info-hotspot-header {
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 27.5px;
   background-color: var(--liu-blue-40);
   cursor: pointer;
   -webkit-transition: width 0.3s ease-in-out 0.2s,
@@ -519,8 +519,8 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 }
 
 .info-hotspot .info-hotspot-icon-wrapper {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
 }
 
 .mobile .info-hotspot .info-hotspot-icon-wrapper {
@@ -529,17 +529,17 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 }
 
 .info-hotspot .info-hotspot-icon {
-  width: 60%;
-  height: 60%;
-  margin: 20%;
+  width: 65%;
+  height: 65%;
+  margin: 17%;
 }
 
 .info-hotspot .info-hotspot-title-wrapper {
   position: absolute;
-  left: 60px;
+  left: 55px;
   top: 0;
   width: 0;
-  height: 60px;
+  height: 55px;
   padding: 0;
   overflow: hidden;
   -webkit-transition: width 0s 0.4s,
@@ -579,7 +579,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   position: absolute;
   left: 260px;
   top: 0;
-  height: 60px;
+  height: 55px;
   width: 40px;
   border-top-right-radius: 5px;
   background-color: var(--liu-blue-40);
@@ -626,7 +626,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   width: 300px;
   height: auto;
   max-height: 250px;
-  top: 60px;
+  top: 55px;
   left: 0;
   padding: 10px;
   background-color: var(--liu-grey-10);
