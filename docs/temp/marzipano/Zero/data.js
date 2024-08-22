@@ -6,8 +6,14 @@ const roomData = {
 }
 
 const pageTitle = 'Linköpings Universitet - ' + roomData.campus + ' - ' + roomData.room;
+// APP_DATA created by the Marzipano Tool. The data is used to create the scenes, hotspots and links.
+// Each scene needs these arrays: linkHotspots, infoHotspots, permHotspots. //Tobias Trofast
 
-// APP_DATA created by the Marzipano Tool. The data is used to create the scenes, hotspots and links. // Tobias Trofast
+// Empty array for reuse: 
+// "linkHotspots": [],
+// "infoHotspots": [],
+// "permHotspots": [],
+
 var APP_DATA = {
   "scenes": [
     {
@@ -46,7 +52,15 @@ var APP_DATA = {
           "target": "1-podium"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "permHotspots": [
+        {
+          "yaw": 0,
+          "pitch": -0.3,
+          "title": roomData.room + " (" + roomData.building + ", " + roomData.campus + ")",
+          "text": "Zero är en öppen yta med flexibel möblering för upp till 60 personer. Här finns display, ljud- och ljusutrustning, scen med mera.",
+        },
+      ]
     },
     {
       "id": "1-podium",
@@ -84,7 +98,20 @@ var APP_DATA = {
           "target": "0-auditorium"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": 2.1,
+          "pitch": 0.2,
+          "title": "Kontrollpanel",
+          "text": "Här kan du starta och styra rummets utrustning. Här finns och kablage för anslutning av dator."
+        }
+      ],
+      "permHotspots": [ {
+        "yaw": 0,
+        "pitch": -0.3,
+        "title": roomData.room + " (" + roomData.building + ", " + roomData.campus + ")",
+        "text": "Zero är en öppen yta med flexibel möblering för upp till 60 personer. Här finns display, ljud- och ljusutrustning, scen med mera.",
+      },]
     }
   ],
   "name": "Project Title",

@@ -7,7 +7,13 @@ const roomData = {
 
 const pageTitle = 'Linköpings Universitet - ' + roomData.campus + ' - ' + roomData.room;
 
-// APP_DATA created by the Marzipano Tool. The data is used to create the scenes, hotspots and links. // Tobias Trofast
+// APP_DATA created by the Marzipano Tool. The data is used to create the scenes, hotspots and links.
+// Each scene needs these arrays: linkHotspots, infoHotspots, permHotspots. //Tobias Trofast
+
+// Empty array for reuse: 
+// "linkHotspots": [],
+// "infoHotspots": [],
+// "permHotspots": [],
 
 var APP_DATA = {
   "scenes": [
@@ -53,7 +59,15 @@ var APP_DATA = {
           "target": "2-auditorium"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "permHotspots": [
+        {
+          "yaw": -0.5,
+          "pitch": -0.1,
+          "title": roomData.room + "</br> (" + roomData.building + ", " + roomData.campus + ")",
+          "text": texter.salstext.gradäng_hybrid_usb,
+        },
+      ]
     },
     {
       "id": "1-podium",
@@ -80,7 +94,7 @@ var APP_DATA = {
       "faceSize": 1488,
       "initialViewParameters": {
         "yaw": 0.06715322307364424,
-        "pitch": 0.4496723523171209,
+        "pitch": 0.36,
         "fov": 1.446604494409654
       },
       "linkHotspots": [
@@ -97,7 +111,40 @@ var APP_DATA = {
           "target": "0-entredrr"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -0.05,
+          "pitch": -0.35,
+          "title": "Podium-kamera",
+          "text": texter.kameror.kamera_podium
+        },
+        {
+          "yaw": -2.45,
+          "pitch": -0.98,
+          "title": "Auditorium-kamera",
+          "text": texter.kameror.kamera_auditorium
+        },
+        {
+          "yaw": 0.7,
+          "pitch": 0.5,
+          "title": "Dokumentkamera",
+          "text": texter.dokumentkamera
+        },
+        {
+          "yaw": -0.08,
+          "pitch": 0.65,
+          "title": "Kontrollpanel",
+          "text": texter.kontrollpanel_nozoom
+        },
+        {
+          "yaw": 0.35,
+          "pitch": 0.85,
+          "title": "Kablar för anslutning",
+          "text": texter.kablage_hybrid
+        }
+
+      ],
+      "permHotspots": [],
     },
     {
       "id": "2-auditorium",
@@ -141,7 +188,8 @@ var APP_DATA = {
           "target": "0-entredrr"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "permHotspots":[]
     }
   ],
   "name": "Campus Valla - B-huset - BL32, Nobel",

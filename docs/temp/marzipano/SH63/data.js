@@ -121,7 +121,20 @@ var APP_DATA = {
           "target": "0-entredrr"
         }
       ],
-      "infoHotspots": [],
+      "infoHotspots": [
+        {
+          "yaw": -2.1,
+          "pitch": 0.1,
+          "title": "Kontrollpanel",
+          "text": texter.kontrollpanel_nozoom
+        },
+        {
+          "yaw": -2.05,
+          "pitch": 0.45,
+          "title": "Kablar för anslutning",
+          "text": texter.kablage_standard
+        }
+      ],
       "permHotspots": [],
     },
     {
