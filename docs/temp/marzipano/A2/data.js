@@ -7,7 +7,15 @@ const roomData = {
 
 const pageTitle = 'Linköpings Universitet - ' + roomData.campus + ' - ' + roomData.room;
 
-// APP_DATA created by the Marzipano Tool. The data is used to create the scenes, hotspots and links. // Tobias Trofast
+// APP_DATA created by the Marzipano Tool. The data is used to create the scenes, hotspots and links.
+// Each scene needs these arrays: linkHotspots, infoHotspots, permHotspots. //Tobias Trofast
+
+// Empty array for reuse: 
+// "linkHotspots": [],
+// "infoHotspots": [],
+// "permHotspots": [],
+
+
 var APP_DATA = {
   "scenes": [
     {
@@ -56,7 +64,15 @@ var APP_DATA = {
           "target": "2-auditorium"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "permHotspots": [
+        {
+          "yaw": 0.4,
+          "pitch": -0.1,
+          "title": roomData.room + " (" + roomData.building + ", " + roomData.campus + ")",
+          "text": texter.salstext.gradäng_hybrid_zoom,
+        },
+      ]
     },
     {
       "id": "1-podium",
@@ -136,7 +152,8 @@ var APP_DATA = {
           "text": texter.dokumentkamera
         }
 
-      ]
+      ],
+      "permHotspots": [],
     },
     {
       "id": "2-auditorium",
@@ -184,7 +201,8 @@ var APP_DATA = {
           "target": "0-entredrr"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "permHotspots":[]
     }
   ],
   "name": pageTitle,

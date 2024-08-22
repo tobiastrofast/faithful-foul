@@ -878,5 +878,13 @@ body.view-control-buttons .viewControlButton {
   left: 10px;
   width: 150px;  
 }
+.perm-hotspot{
+  width: 220px;
+  padding: 0 5px;
+  -webkit-transition: width 0s 0.4s,
+                      padding 0s 0.4s;
+  transition: width 0s 0.4s,
+              padding 0s 0.4s;
+}
 
 

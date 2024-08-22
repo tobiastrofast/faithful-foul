@@ -1,4 +1,12 @@
 const texter = {
+  salstext: {
+      gradäng_hybrid_zoom: "Salen är av typen Gradäng Hybrid Zoom och lämpar sig för föreläsningar, presentationer och disputationer i hybrid eller campusformat. Dessa salar har en fast dator som sköter salens Zoom-rum och anslutningarna till salens kameror, mikrofoner och högtalare. </br> Klicka på Podium-vyn för att se salens tekniska utrustning.",
+      gradäng_hybrid_usb: "Salen är av typen Gradäng Hybrid USB och lämpar sig för föreläsningar, presentationer och disputationer i hybrid eller campusformat. I denna sal måste du ansluta bildytor, kameror, mikrofoner med mera till din egen dator om du vill använda dem i t ex Zoom.</br> Klicka på Podium-vyn för att se salens tekniska utrustning.",
+      gradäng_standard: "Salen är av typen Gradäng Standard och lämpar sig för föreläsningar, presentationer och disputationer på campus. Salen har bildytor, mikrofon och högtalare, men inte kameror för distans- eller hybridsundervisning. </br> Klicka på Podium-vyn för att se salens tekniska utrustning.",
+      plattsal_hybrid_zoom: "Salen är av typen Platt Sal Hybrid Zoom och lämpar sig för föreläsningar, presentationer och disputationer i hybrid eller campusformat. Dessa salar har en fast dator som sköter salens Zoom-rum och anslutningarna till salens kameror, mikrofoner och högtalare. </br> Klicka på Podium-vyn för att se salens tekniska utrustning.",
+      plattsal_standard: "Salen är av typen Platt Sal Standard och lämpar sig för föreläsningar, presentationer och disputationer på campus. Salen har bildytor, mikrofon Salen har bildytor, mikrofon och högtalare, men inte kameror för distans- eller hybridsundervisning. </br> Klicka på Podium-vyn för att se salens tekniska utrustning.",
+      alc: "Detta är en av LiU så kallad ALC-salar (Active Learning Classroom) där möblering och annan utrustning i salen kan förändras för att anpassas för undervisningens behov. </br> Klicka på Podium-vyn för att se salens tekniska utrustning."
+  },
   bildytor: {
     projektor_single: "Denna sal är utrustad en projektor som kan användas för att visa bild från t ex din dator.",
     projektor_duo: "Denna sal är utrustad med två projektorer som kan användas för att visa antingen samma eller två olika bilder från t ex dator.",
