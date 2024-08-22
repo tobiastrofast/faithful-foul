@@ -154,7 +154,7 @@ var APP_DATA = {
           "yaw": 0.05,
           "pitch": 0.65,
           "title": "Kontrollpanel",
-          "text": texter.kontrollpanel
+          "text": texter.kontrollpanel_touch
         },
       {
           "yaw": 0.63,
@@ -172,7 +172,7 @@ var APP_DATA = {
           "yaw": 0.95,
           "pitch": 0.46,
           "title": "Kablar för anslutning",
-          "text": texter.kablage
+          "text": texter.kablage_hybrid
         }
 
       ],

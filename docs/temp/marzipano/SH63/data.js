@@ -4,8 +4,16 @@ const roomData = {
   building:'Studenthuset',
   room:'SH63',
 }
-
 const pageTitle = 'Linköpings Universitet - ' + roomData.campus + ' - ' + roomData.room;
+
+// APP_DATA created by the Marzipano Tool. The data is used to create the scenes, hotspots and links.
+// Each scene needs these arrays: linkHotspots, infoHotspots, permHotspots. //Tobias Trofast
+
+// Empty array for reuse: 
+// "linkHotspots": [],
+// "infoHotspots": [],
+// "permHotspots": [],
+
 var APP_DATA = {
   "scenes": [
     {
@@ -32,8 +40,8 @@ var APP_DATA = {
       ],
       "faceSize": 1488,
       "initialViewParameters": {
-        "yaw": -0.2627726197240605,
-        "pitch": 0.3032990279984098,
+        "yaw": 0.45,
+        "pitch": 0.35,
         "fov": 1.446604494409654
       },
       "linkHotspots": [
@@ -50,7 +58,26 @@ var APP_DATA = {
           "target": "2-auditorium"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [{
+        "yaw": 1.18,
+        "pitch": 0.01,
+        "title": "Kontrollpanel",
+        "text": texter.kontrollpanel_nozoom
+      },
+      {
+        "yaw": 1.3,
+        "pitch": 0.5,
+        "title": "Kablar för anslutning",
+        "text": texter.kablage_standard
+      }
+
+    ],
+      "permHotspots": [{
+        "yaw": -0.3,
+        "pitch": -0.1,
+        "title": roomData.room + "</br> (" + roomData.building + ", " + roomData.campus + ")",
+        "text": texter.salstext.plattsal_standard,
+      },],
     },
     {
       "id": "1-podium",
@@ -94,7 +121,8 @@ var APP_DATA = {
           "target": "0-entredrr"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "permHotspots": [],
     },
     {
       "id": "2-auditorium",
@@ -138,7 +166,8 @@ var APP_DATA = {
           "target": "0-entredrr"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "permHotspots": [],
     }
   ],
   "name": "Project Title",
