@@ -144,17 +144,18 @@ var APP_DATA = {
           "title": "Kastmikrofon",
           "text": texter.mikrofoner.mic_kast
         },
-        {
-          "yaw": -0.27,
-          "pitch": 0.52,
-          "title": "Dokumentkamera",
-          "text": texter.dokumentkamera
-        },
+       
         {
           "yaw": 0.05,
           "pitch": 0.65,
           "title": "Kontrollpanel",
           "text": texter.kontrollpanel_touch
+        },
+        {
+          "yaw": -0.27,
+          "pitch": 0.52,
+          "title": "Dokumentkamera",
+          "text": texter.dokumentkamera
         },
       {
           "yaw": 0.63,
