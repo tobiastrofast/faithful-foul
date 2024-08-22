@@ -20,7 +20,7 @@ const texter = {
     kamera_forelasare_closeup: "Vid distansundervisning filmar denna kamera föreläsaren eller presentatören i rummet i närbild.",
   },
   mikrofoner: {
-    mic_kast: "Denna mikrofon är mjuk och kan kastas, eller överlämnas, mellan deltagarna i rummet. Den är trådlös och aktiveras automatiskt när den lyfts från sin laddningsstation på bordet. Ljudet från mikrofonen hörs i rummet och i distansundervisningen. </br> <a href='#' style='text-decoration: underline;'>Länk till mer information</a>.",
+    mic_kast: "Denna mikrofon är mjuk och kan kastas, eller överlämnas, mellan deltagarna i rummet. Den är trådlös och aktiveras automatiskt när den lyfts från sin laddningsstation på bordet. Ljudet från mikrofonen hörs i rummet och i distansundervisningen.",
     mic_fast: "Här finns både två trådlösa 'myggor' och en trådlös handmikrofon. Ljudet från mikrofonerna hörs i rummet och i distansundervisningen. </br> Mikrofonerna måste aktiveras på genom att trycka på ON-knappen och sedan Mute-knappen tills den lyser grönt."
   },
 

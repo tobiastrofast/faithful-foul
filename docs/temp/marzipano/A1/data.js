@@ -7,7 +7,13 @@ const roomData = {
 
 const pageTitle = 'Linköpings Universitet - ' + roomData.campus + ' - ' + roomData.room;
 
-// APP_DATA created by the Marzipano Tool. The data is used to create the scenes, hotspots and links. // Tobias Trofast
+// APP_DATA created by the Marzipano Tool. The data is used to create the scenes, hotspots and links.
+// Each scene needs these arrays: linkHotspots, infoHotspots, permHotspots. //Tobias Trofast
+
+// Empty array for reuse: 
+// "linkHotspots": [],
+// "infoHotspots": [],
+// "permHotspots": [],
 
 var APP_DATA = {
   "scenes": [
@@ -45,43 +51,26 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.21147000229216673,
-          "pitch": 0.26169679920264066,
+          "yaw": -0.15,
+          "pitch": 0.15,
           "rotation": 0,
           "target": "1-podium"
         },
         {
-          "yaw": 1.2076772358035424,
-          "pitch": -0.11953149178850708,
+          "yaw": 1.2,
+          "pitch": -0.13,
           "rotation": 0,
           "target": "2-auditorium"
         }
       ],
-      "infoHotspots": [
+      "infoHotspots": [],
+      "permHotspots": [
         {
-          "yaw": 1.2198633007851232,
-          "pitch": -0.22173264315717134,
-          "title": "Podium-kamera",
-          "text": texter.kameror.kamera_podium
+          "yaw": 0.4,
+          "pitch": -0.1,
+          "title": roomData.room + " (" + roomData.building + ", " + roomData.campus + ")",
+          "text": texter.salstext.gradäng_hybrid_zoom,
         },
-        {
-          "yaw": 0.6945770412612688,
-          "pitch": -0.2545749737595653,
-          "title": "Projektor 1",
-          "text": texter.bildytor.projektor_duo
-        },
-        {
-          "yaw": 1.126599001680706,
-          "pitch": -0.3542446725509052,
-          "title": "Projektor 2",
-          "text": texter.bildytor.projektor_duo
-        },
-        {
-          "yaw": -0.4151656979656053,
-          "pitch": -0.3015645443928463,
-          "title": "Auditorie-kamera",
-          "text": texter.kameror.kamera_auditorium
-        }
       ]
     },
     {
@@ -132,37 +121,63 @@ var APP_DATA = {
       ],
       "infoHotspots": [
         {
-          "yaw": -0.1,
+          "yaw": -0.08,
           "pitch": -0.25,
-          "title": "Auditorie-kamera",
+          "title": "Podium-kamera",
+          "text": texter.kameror.kamera_podium
+        },
+        {
+          "yaw": -3.08,
+          "pitch": -1.15,
+          "title": "Auditorium-kamera",
           "text": texter.kameror.kamera_auditorium
         },
         {
-          "yaw": -0.85,
+          "yaw": -0.98,
+          "pitch": 0.48,
+          "title": "Mikrofoner",
+          "text": texter.mikrofoner.mic_fast
+        },
+        {
+          "yaw": -0.8,
           "pitch": 0.44,
           "title": "Kastmikrofon",
           "text": texter.mikrofoner.mic_kast
         },
         {
-          "yaw": -1,
-          "pitch": 0.44,
-          "title": "Mikrofoner",
-          "text": texter.mikrofoner.mic_fast
+          "yaw": -0.27,
+          "pitch": 0.52,
+          "title": "Dokumentkamera",
+          "text": texter.dokumentkamera
         },
         {
-          "yaw": 0.1,
+          "yaw": 0.05,
           "pitch": 0.65,
           "title": "Kontrollpanel",
           "text": texter.kontrollpanel
         },
+      {
+          "yaw": 0.63,
+          "pitch": 0.3,
+          "title": "Deltagarskärm",
+          "text": texter.deltagarskarm
+        },
         {
-          "yaw": -0.32,
+          "yaw": 0.25,
           "pitch": 0.4,
-          "title": "Dokumentkamera",
-          "text": texter.dokumentkamera
+          "title": "Touch-skärm",
+          "text": texter.touchskarm
+        },
+        {
+          "yaw": 0.95,
+          "pitch": 0.46,
+          "title": "Kablar för anslutning",
+          "text": texter.kablage
         }
 
-      ]
+      ],
+      "permHotspots": [],
+       
     },
     {
       "id": "2-auditorium",
@@ -210,7 +225,8 @@ var APP_DATA = {
           "target": "0-entrdrr"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "permHotspots": [],
     }
   ],
   "name": "Linköpings Universitet - Campus Valla - A1",
