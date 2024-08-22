@@ -70,7 +70,7 @@ var APP_DATA = {
           "yaw": 0.4,
           "pitch": -0.1,
           "title": roomData.room + " (" + roomData.building + ", " + roomData.campus + ")",
-          "text": texter.salstext.gradäng_hybrid_zoom,
+          "text": texter.salstext.gradang_hybrid_zoom,
         },
       ]
     },

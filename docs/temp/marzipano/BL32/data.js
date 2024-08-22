@@ -65,7 +65,7 @@ var APP_DATA = {
           "yaw": -0.5,
           "pitch": -0.1,
           "title": roomData.room + "</br> (" + roomData.building + ", " + roomData.campus + ")",
-          "text": texter.salstext.gradäng_hybrid_usb,
+          "text": texter.salstext.gradang_hybrid_usb,
         },
       ]
     },
@@ -134,7 +134,7 @@ var APP_DATA = {
           "yaw": -0.08,
           "pitch": 0.65,
           "title": "Kontrollpanel",
-          "text": texter.kontrollpanel_nozoom
+          "text": texter.kontrollpanel_crestron_knapp
         },
         {
           "yaw": 0.35,

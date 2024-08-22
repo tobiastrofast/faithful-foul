@@ -58,7 +58,7 @@ var APP_DATA = {
           "yaw": 0.37,
           "pitch": 0.42,
           "title": "Kontrollpanel",
-          "text": texter.kontrollpanel_nozoom
+          "text": texter.kontrollpanel_projektorpanel
         },
         {
           "yaw": 0.8,

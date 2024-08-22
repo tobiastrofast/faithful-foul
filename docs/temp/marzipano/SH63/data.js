@@ -62,7 +62,7 @@ var APP_DATA = {
         "yaw": 1.18,
         "pitch": 0.01,
         "title": "Kontrollpanel",
-        "text": texter.kontrollpanel_nozoom
+        "text": texter.kontrollpanel_crestron_knapp
       },
       {
         "yaw": 1.3,
