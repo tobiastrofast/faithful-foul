@@ -261,7 +261,7 @@
     var icon = document.createElement('img');
     // icon.src = '../common/img/link.png';
     // icon.src = '../common/img/link_360.png';
-    icon.src = '../common/img/link-liu-default.svg';
+    icon.src = '../common/img/camera_angle_liu.svg';
     icon.classList.add('link-hotspot-icon');
 
     // Set rotation transform.
