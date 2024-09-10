@@ -14,14 +14,16 @@ const texter = {
     display_duo: "Denna sal är utrustad med två displayer som kan användas för att visa antingen samma eller två olika bilder från t ex din dator.",
   },
   kameror: {
-    kamera_auditorium: "Vid distansundervisning filmar denna kamera auditoriet, alltså deltagarna i rummet. Valet av kameravy styrs via kontrollpanelen.",
-    kamera_podium: "Vid distansundervisning filmar denna kamera podiet, alltså föreläsaren el. presentatören i rummet. Valet av kameravy styrs via kontrollpanelen.",
+    kamera_auditorium: "Vid distansundervisning filmar denna kamera auditoriet, alltså deltagarna i rummet. Valet av kameravy strys i Zoom.",
+    kamera_auditorium_kontroll: "Vid distansundervisning filmar denna kamera auditoriet, alltså deltagarna i rummet. Valet av kameravy styrs via kontrollpanelen.",
+    kamera_podium: "Vid distansundervisning filmar denna kamera podiet, alltså föreläsaren eller presentatören i rummet. Valet av kameravy styrs via kontrollpanelen.",
+    kamera_podium_kontroll: "Vid distansundervisning filmar denna kamera podiet, alltså föreläsaren eller presentatören i rummet.  Valet av kameravy strys i Zoom.",
     kamera_forelasare: "Vid distansundervisning filmar denna kamera föreläsaren eller presentatören i rummet. Valet av kameravy styrs via kontrollpanelen.",
     kamera_forelasare_closeup: "Vid distansundervisning filmar denna kamera föreläsaren eller presentatören i rummet i närbild.",
   },
   mikrofoner: {
-    mic_kast: "Denna mikrofon är mjuk och kan kastas, eller överlämnas, mellan deltagarna i rummet. Den är trådlös och aktiveras automatiskt när den lyfts från sin laddningsstation på bordet. Ljudet från mikrofonen hörs i rummet och i distansundervisningen.",
-    mic_fast: "Här finns både två trådlösa 'myggor' och en trådlös handmikrofon. Ljudet från mikrofonerna hörs i rummet och i distansundervisningen. </br> Mikrofonerna måste aktiveras på genom att trycka på ON-knappen och sedan Mute-knappen tills den lyser grönt."
+    mic_kast: "Denna mikrofon är mjuk och kan kastas, eller överlämnas, mellan deltagarna i rummet. Den är trådlös och aktiveras automatiskt när den lyfts från sin laddningsstation på bordet.</br> Ljudet från mikrofonen hörs i rummet och i distansundervisningen.",
+    mic_fast: "Här finns både två trådlösa 'myggor' och en trådlös handmikrofon. Mikrofonerna måste aktiveras på genom att trycka på ON-knappen och sedan Mute-knappen tills en diod lyser grönt. </br> Ljudet från mikrofonerna hörs i rummet och i distansundervisningen."
   },
 
   kontrollpanel_touch: "Denna panel används för att starta tekniken i rummet. Den har snabbval för distansundervisning med Zoom samt campusundervisning.",
@@ -30,7 +32,7 @@ const texter = {
   touchskarm: "Denna touch-skärm används för att styra Zoom-mötet i salen. Här kan du starta och avsluta mötet, välja kameror, dela skärm, annotera delat material och med mera.",
   deltagarskarm: "Denna skärm används för att visa deltagarna i distansundervisningen. Ovanpå denna skärm sitter ytterligare en närbildskamera som kan visa presentatören i närbild.",
   dokumentkamera: "Denna kamera används för att visa dokument, böcker, föremål eller liknande på projektorerna eller displayerna. Bilden från dokumentkameran kan också delas till deltagarna i distansundervisningen.",
-  kablage_hybrid: "Om du vill ansluta din egen dator för att visa en presentation finns här HDMI-kabel (med adaptrar). Vill du ansluta till mikrofoner och/eller högtalare använder du USB-kabeln",
-  kablage_standard: "Om du vill ansluta din egen dator för att visa en presentation finns här HDMI-kabel (med adaptrar). Vill du ansluta till mikrofoner och/eller högtalare använder du USB-kabeln"
+  kablage_hybrid: "Om du vill ansluta din egen dator för att visa en presentation finns här HDMI-kabel (med adaptrar). Vill du ansluta till mikrofoner använder du USB-kabeln",
+  kablage_standard: "Om du vill ansluta din egen dator för att visa en presentation finns här HDMI-kabel (med adaptrar). Vill du ansluta till mikrofoner använder du USB-kabeln"
 
 };

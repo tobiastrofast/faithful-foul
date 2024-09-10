@@ -125,13 +125,13 @@ var APP_DATA = {
           "yaw": -0.1,
           "pitch": -0.25,
           "title": "Podium-kamera",
-          "text": texter.kameror.kamera_podium
+          "text": texter.kameror.kamera_podium_kontroll
         },
         {
           "yaw": -3.28,
           "pitch": -0.93,
           "title": "Auditorium-kamera",
-          "text": texter.kameror.kamera_auditorium
+          "text": texter.kameror.kamera_auditorium_kontroll
         },
         {
           "yaw": -0.93,
