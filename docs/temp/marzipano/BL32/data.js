@@ -128,11 +128,11 @@ var APP_DATA = {
           "yaw": 0.7,
           "pitch": 0.5,
           "title": "Dokumentkamera",
-          "text": texter.dokumentkamera
+          "text": texter.dokumentkamera_lokal
         },
         {
           "yaw": -0.08,
-          "pitch": 0.65,
+          "pitch": 0.61,
           "title": "Kontrollpanel",
           "text": texter.kontrollpanel_crestron_knapp
         },

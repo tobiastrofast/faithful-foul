@@ -32,6 +32,20 @@ const texter = {
   touchskarm: "Denna touch-skärm används för att styra Zoom-mötet i salen. Här kan du starta och avsluta mötet, välja kameror, dela skärm, annotera delat material och med mera.",
   deltagarskarm: "Denna skärm används för att visa deltagarna i distansundervisningen. Ovanpå denna skärm sitter ytterligare en närbildskamera som kan visa presentatören i närbild.",
   dokumentkamera: "Denna kamera används för att visa dokument, böcker, föremål eller liknande på projektorerna eller displayerna. Bilden från dokumentkameran kan också delas till deltagarna i distansundervisningen.",
+  // Salar som inte kan dela dokumentkamera:
+  // Valla:
+  //   BL32
+  //   FE249 (osäker om det finns en dokumentkamera här)
+  //   Vallfarten
+  //   I101
+  // US:
+  //   Birgitta 
+  // Norrköping:
+  //   TP1
+  //   TP2
+  //   K1
+  //   K2
+  dokumentkamera_lokal: "Denna kamera används för att visa dokument, böcker, föremål eller liknande på projektorerna eller displayerna.",
   kablage_hybrid: "Om du vill ansluta din egen dator för att visa en presentation finns här HDMI-kabel (med adaptrar). Vill du ansluta till mikrofoner använder du USB-kabeln",
   kablage_standard: "Om du vill ansluta din egen dator för att visa en presentation finns här HDMI-kabel (med adaptrar). Vill du ansluta till mikrofoner använder du USB-kabeln"
 
