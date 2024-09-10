@@ -118,12 +118,13 @@ var APP_DATA = {
           "title": "Podium-kamera",
           "text": texter.kameror.kamera_podium
         },
-        {
-          "yaw": -2.45,
-          "pitch": -0.98,
-          "title": "Auditorium-kamera",
-          "text": texter.kameror.kamera_auditorium
-        },
+        //Denna är inte i bruk
+        // {
+        //   "yaw": -2.45,
+        //   "pitch": -0.98,
+        //   "title": "Auditorium-kamera",
+        //   "text": texter.kameror.kamera_auditorium
+        // },
         {
           "yaw": 0.7,
           "pitch": 0.5,
@@ -141,6 +142,12 @@ var APP_DATA = {
           "pitch": 0.85,
           "title": "Kablar för anslutning",
           "text": texter.kablage_hybrid
+        },
+        {
+          "yaw": 1.75,
+          "pitch": 0.1,
+          "title": "Mikrofoner",
+          "text": texter.mikrofoner.mic_fast
         }
 
       ],
