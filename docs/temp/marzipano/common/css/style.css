@@ -470,12 +470,14 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 .no-touch .info-hotspot:hover {
   opacity: 1;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  z-index: 10000;
+  -webkit-transition: opacity 0.2s, z-index 0.2s;
+  transition: opacity 0.2s, z-index 0.2s;
 }
 
 .info-hotspot.visible {
   opacity: 1;
+  z-index: 10000;
 }
 
 .info-hotspot .info-hotspot-header {
