@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #1a365d 0%, #2d5a8c 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #1a365d 0%, #2d5a8c 100%);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Main page counters */
+.counters-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.counter-card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.counter-card:active {
+    transform: scale(0.98);
+}
+
+.counter-card h2 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.counter-value {
+    font-size: 72px;
+    font-weight: 700;
+    color: #2d5a8c;
+    margin-bottom: 10px;
+}
+
+/* Admin page */
+.admin-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.admin-card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.admin-card h2 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.admin-display {
+    font-size: 56px;
+    font-weight: 700;
+    color: #2d5a8c;
+    margin-bottom: 25px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 12px 20px;
+}
+
+.btn-increase,
+.btn-decrease {
+    flex: 1;
+    max-width: 80px;
+    font-size: 24px;
+    padding: 15px;
+}
+
+.btn-increase {
+    background: #3b82f6;
+    color: white;
+}
+
+.btn-increase:active {
+    background: #1e40af;
+    transform: scale(0.95);
+}
+
+.btn-decrease {
+    background: #60a5fa;
+    color: white;
+}
+
+.btn-decrease:active {
+    background: #1e3a8a;
+    transform: scale(0.95);
+}
+
+.btn-reset {
+    width: 100%;
+    background: #1e3a8a;
+    color: white;
+}
+
+.btn-reset:active {
+    background: #0f172a;
+    transform: scale(0.95);
+}
+
+.reset-all-section {
+    padding: 0 20px 20px 20px;
+}
+
+.btn-reset-all {
+    width: 100%;
+    background: #1e3a8a;
+    color: white;
+    padding: 15px;
+}
+
+.btn-reset-all:active {
+    background: #0f172a;
+    transform: scale(0.95);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+
+.admin-link,
+.back-link {
+    color: #2d5a8c;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.admin-link:active,
+.back-link:active {
+    color: #1a365d;
+}
+
+/* Tablet and larger */
+@media (min-width: 768px) {
+    .container {
+        max-width: 900px;
+        margin: 20px auto;
+        min-height: auto;
+        border-radius: 25px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    .counters-grid,
+    .admin-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main {
+        padding: 40px;
+    }
+
+    .counter-card,
+    .admin-card {
+        padding: 35px;
+    }
+
+    .counter-value {
+        font-size: 96px;
+    }
+
+    .admin-display {
+        font-size: 72px;
+    }
+
+    .btn-increase,
+    .btn-decrease {
+        max-width: 100px;
+        font-size: 28px;
+        padding: 20px;
+    }
+
+    .button-group {
+        gap: 20px;
+    }
+}
