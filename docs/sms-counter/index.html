@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Räknare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SMS Räknare</h1>
+        </header>
+
+        <main class="counters-grid">
+            <div class="counter-card">
+                <h2>Antalet sms jag skickat till Arvid</h2>
+                <div class="counter-value" id="sms-sent">0</div>
+            </div>
+
+            <div class="counter-card">
+                <h2>Antalet svar jag fått</h2>
+                <div class="counter-value" id="sms-received">0</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            displayCounters();
+        });
+
+        function displayCounters() {
+            const smsSent = localStorage.getItem('smsSent') || '0';
+            const smsReceived = localStorage.getItem('smsReceived') || '0';
+            
+            document.getElementById('sms-sent').textContent = smsSent;
+            document.getElementById('sms-received').textContent = smsReceived;
+        }
+    </script>
+</body>
+</html>

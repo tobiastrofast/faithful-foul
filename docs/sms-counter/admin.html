@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - SMS Räknare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Admin Panel</h1>
+        </header>
+
+        <main class="admin-grid">
+            <div class="admin-card">
+                <h2>Antalet sms jag skickat till Arvid</h2>
+                <div class="admin-display" id="sms-sent-display">0</div>
+                
+                <div class="button-group">
+                    <button class="btn btn-decrease" onclick="decreaseSms()">−</button>
+                    <button class="btn btn-increase" onclick="increaseSms()">+</button>
+                </div>
+                
+                <button class="btn btn-reset" onclick="resetSms()">Återställ</button>
+            </div>
+
+            <div class="admin-card">
+                <h2>Antalet svar jag fått</h2>
+                <div class="admin-display" id="sms-received-display">0</div>
+                
+                <div class="button-group">
+                    <button class="btn btn-decrease" onclick="decreaseReceived()">−</button>
+                    <button class="btn btn-increase" onclick="increaseReceived()">+</button>
+                </div>
+                
+                <button class="btn btn-reset" onclick="resetReceived()">Återställ</button>
+            </div>
+        </main>
+
+        <div class="reset-all-section">
+            <button class="btn btn-reset-all" onclick="resetAll()">Återställ Allt</button>
+        </div>
+
+        <footer>
+            <a href="index.html" class="back-link">← Tillbaka</a>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadCounters();
+        });
+
+        function loadCounters() {
+            const smsSent = localStorage.getItem('smsSent') || '0';
+            const smsReceived = localStorage.getItem('smsReceived') || '0';
+            
+            document.getElementById('sms-sent-display').textContent = smsSent;
+            document.getElementById('sms-received-display').textContent = smsReceived;
+        }
+
+        function increaseSms() {
+            let value = parseInt(localStorage.getItem('smsSent') || '0');
+            value++;
+            localStorage.setItem('smsSent', value);
+            document.getElementById('sms-sent-display').textContent = value;
+        }
+
+        function decreaseSms() {
+            let value = parseInt(localStorage.getItem('smsSent') || '0');
+            value = Math.max(0, value - 1);
+            localStorage.setItem('smsSent', value);
+            document.getElementById('sms-sent-display').textContent = value;
+        }
+
+        function resetSms() {
+            localStorage.setItem('smsSent', '0');
+            document.getElementById('sms-sent-display').textContent = '0';
+        }
+
+        function increaseReceived() {
+            let value = parseInt(localStorage.getItem('smsReceived') || '0');
+            value++;
+            localStorage.setItem('smsReceived', value);
+            document.getElementById('sms-received-display').textContent = value;
+        }
+
+        function decreaseReceived() {
+            let value = parseInt(localStorage.getItem('smsReceived') || '0');
+            value = Math.max(0, value - 1);
+            localStorage.setItem('smsReceived', value);
+            document.getElementById('sms-received-display').textContent = value;
+        }
+
+        function resetReceived() {
+            localStorage.setItem('smsReceived', '0');
+            document.getElementById('sms-received-display').textContent = '0';
+        }
+
+        function resetAll() {
+            if (confirm('Är du säker på att du vill återställa allt?')) {
+                localStorage.setItem('smsSent', '0');
+                localStorage.setItem('smsReceived', '0');
+                loadCounters();
+            }
+        }
+    </script>
+</body>
+</html>
