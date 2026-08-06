@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'KorolevLiULight';
+    src: url('../fonts/KorolevLiU-Light.woff2') format('woff2'), url('../fonts/KorolevLiU-Light.woff2') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'KorolevLiUMedium';
+    src: url('../fonts/KorolevLiU-Medium.woff2') format('woff2'), url('../fonts/KorolevLiU-Medium.woff2') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'KorolevLiUBold';
+    src: url('../fonts/KorolevLiU-Bold.woff2') format('woff2'), url('../fonts/KorolevLiU-Bold.woff2') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* @font-face {
+    font-family: 'KorolevLiUThin';
+    src: url('/korolevliu/korolevliu_thin-webfont.woff2') format('woff2'), url('/korolevliu/korolevliu_thin-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+} */
